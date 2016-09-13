@@ -20,7 +20,7 @@ extension UIImage {
             UIColor.blackColor().setFill()
         }
         UIRectFill(rect)
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -34,7 +34,7 @@ extension UIImage {
         keyWindow?.layer.renderInContext(context!)
         let capturedScreen = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return capturedScreen;
+        return capturedScreen!;
     }
     
     public func applyBlurWithRadius(blurRadius: CGFloat, tintColor: UIColor?, saturationDeltaFactor: CGFloat, maskImage: UIImage? = nil) -> UIImage? {
@@ -73,9 +73,9 @@ extension UIImage {
             UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
             let effectInContext = UIGraphicsGetCurrentContext()
             
-            CGContextScaleCTM(effectInContext, 1.0, -1.0)
-            CGContextTranslateCTM(effectInContext, 0, -size.height)
-            CGContextDrawImage(effectInContext, imageRect, self.CGImage)
+            CGContextScaleCTM(effectInContext!, 1.0, -1.0)
+            CGContextTranslateCTM(effectInContext!, 0, -size.height)
+            CGContextDrawImage(effectInContext!, imageRect, self.CGImage!)
             
             var effectInBuffer = createEffectBuffer(effectInContext!)
             
@@ -125,10 +125,10 @@ extension UIImage {
                 ]
                 
                 let divisor: CGFloat = 256
-                let matrixSize = floatingPointSaturationMatrix.count
+                var matrixSize = floatingPointSaturationMatrix.count
                 var saturationMatrix = [Int16](count: matrixSize, repeatedValue: 0)
                 
-                for var i: Int = 0; i < matrixSize; ++i {
+                for i: Int in 0 ..< matrixSize + 1 {
                     saturationMatrix[i] = Int16(round(floatingPointSaturationMatrix[i] * divisor))
                 }
                 
@@ -141,13 +141,13 @@ extension UIImage {
             }
             
             if !effectImageBuffersAreSwapped {
-                effectImage = UIGraphicsGetImageFromCurrentImageContext()
+                effectImage = UIGraphicsGetImageFromCurrentImageContext()!
             }
             
             UIGraphicsEndImageContext()
             
             if effectImageBuffersAreSwapped {
-                effectImage = UIGraphicsGetImageFromCurrentImageContext()
+                effectImage = UIGraphicsGetImageFromCurrentImageContext()!
             }
             
             UIGraphicsEndImageContext()
@@ -156,28 +156,28 @@ extension UIImage {
         // Set up output context.
         UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
         let outputContext = UIGraphicsGetCurrentContext()
-        CGContextScaleCTM(outputContext, 1.0, -1.0)
-        CGContextTranslateCTM(outputContext, 0, -size.height)
+        CGContextScaleCTM(outputContext!, 1.0, -1.0)
+        CGContextTranslateCTM(outputContext!, 0, -size.height)
         
         // Draw base image.
-        CGContextDrawImage(outputContext, imageRect, self.CGImage)
+        CGContextDrawImage(outputContext!, imageRect, self.CGImage!)
         
         // Draw effect image.
         if hasBlur {
-            CGContextSaveGState(outputContext)
+            CGContextSaveGState(outputContext!)
             if let image = maskImage {
-                CGContextClipToMask(outputContext, imageRect, image.CGImage);
+                CGContextClipToMask(outputContext!, imageRect, image.CGImage!);
             }
-            CGContextDrawImage(outputContext, imageRect, effectImage.CGImage)
-            CGContextRestoreGState(outputContext)
+            CGContextDrawImage(outputContext!, imageRect, effectImage.CGImage!)
+            CGContextRestoreGState(outputContext!)
         }
         
         // Add in color tint.
         if let color = tintColor {
-            CGContextSaveGState(outputContext)
-            CGContextSetFillColorWithColor(outputContext, color.CGColor)
-            CGContextFillRect(outputContext, imageRect)
-            CGContextRestoreGState(outputContext)
+            CGContextSaveGState(outputContext!)
+            CGContextSetFillColorWithColor(outputContext!, color.CGColor)
+            CGContextFillRect(outputContext!, imageRect)
+            CGContextRestoreGState(outputContext!)
         }
         
         // Output image is ready.
