@@ -125,8 +125,8 @@ extension UIImage {
                 ]
                 
                 let divisor: CGFloat = 256
-                var matrixSize = floatingPointSaturationMatrix.count
-                var saturationMatrix = [Int16](count: matrixSize, repeatedValue: 0)
+                let matrixSize = floatingPointSaturationMatrix.count
+                let saturationMatrix = [Int16](count: matrixSize, repeatedValue: 0)
                 
                 for i: Int in 0 ..< matrixSize + 1 {
                     saturationMatrix[i] = Int16(round(floatingPointSaturationMatrix[i] * divisor))
