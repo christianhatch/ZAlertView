@@ -13,6 +13,20 @@
 
 ZAlertView is a highly customizable dialog (exaggerated, right?) view which can be used as a substitution for UIAlertView. It's written in Swift. This is the gift I give to myself on my 26th birthday.
 
+## Import
+
+For Swift
+
+```swift
+  import ZAlertView
+```
+
+For Objective-C
+
+```objective-c
+  #import "ZAlertView-Swift.h"
+```
+
 ## Usage
 
 There are 3 types of dialog that ZAlertView currently supports: Alert, Confirmation (Yes/No) and  Multiple choice. TextFields can also be added to any of those types.
@@ -83,6 +97,11 @@ There are plenty of attributes that you can use to make your own style for the w
   public static var messageColor: UIColor?
   public static var cancelTextColor: UIColor?
   public static var normalTextColor: UIColor?
+
+  //Text field style
+  public static var textFieldTextColor: UIColor?
+  public static var textFieldBorderColor: UIColor?
+  public static var textFieldBackgroundColor: UIColor?
 ```
 
 There are also some basic animations:
@@ -162,7 +181,7 @@ ZAlertView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "ZAlertView"
+pod 'ZAlertView'
 ```
 
 ## Author

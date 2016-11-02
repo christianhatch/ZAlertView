@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B032F434AD961419E58A424 /* Pods_ZAlertView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001E9051963C8F28FDAA82D /* Pods_ZAlertView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B6A57379689FCACDBF4A26F9 /* Pods_ZAlertView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132326945D6017566C5CA479 /* Pods_ZAlertView_Example.framework */; };
+		9174CD1E1D1ADB6100BA28C4 /* ZAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174CD1C1D1ADB2700BA28C4 /* ZAlertView.framework */; };
+		9174CD1F1D1ADB6100BA28C4 /* ZAlertView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9174CD1C1D1ADB2700BA28C4 /* ZAlertView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC0A38E4484CBD16B6A40F0A /* Pods_ZAlertView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4022FDD7BEDC62280A613165 /* Pods_ZAlertView_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +29,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9174CD201D1ADB6100BA28C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9174CD1F1D1ADB6100BA28C4 /* ZAlertView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		03485B7084B6BA4FA3F30773 /* Pods-ZAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAlertView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		04C6FDB3F315266828FD7653 /* ZAlertView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZAlertView.podspec; path = ../ZAlertView.podspec; sourceTree = "<group>"; };
-		08378FFA9C75150FFADD064A /* Pods-ZAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAlertView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0F79004FC124EA541C88FAC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		132326945D6017566C5CA479 /* Pods_ZAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3001E9051963C8F28FDAA82D /* Pods_ZAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4022FDD7BEDC62280A613165 /* Pods_ZAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		402DC6CA96160DF473301C41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		443EAF03BC97C111009DE77F /* Pods-ZAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAlertView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZAlertView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAlertView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +60,10 @@
 		607FACE51AFB9204008FA782 /* ZAlertView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZAlertView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		753653027C4D7D64FA2E8A01 /* Pods-ZAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAlertView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9174CD1C1D1ADB2700BA28C4 /* ZAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZAlertView.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ZAlertView-btsvjutaokxrbveryxutroydeuyi/Build/Products/Debug-iphonesimulator/ZAlertView/ZAlertView.framework"; sourceTree = "<group>"; };
+		D4F48E4804F615242398672B /* Pods-ZAlertView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAlertView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAlertView_Tests/Pods-ZAlertView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D9A0210C99C651E442C30C07 /* Pods-ZAlertView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAlertView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAlertView_Tests/Pods-ZAlertView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A57379689FCACDBF4A26F9 /* Pods_ZAlertView_Example.framework in Frameworks */,
+				5B032F434AD961419E58A424 /* Pods_ZAlertView_Example.framework in Frameworks */,
+				9174CD1E1D1ADB6100BA28C4 /* ZAlertView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0A38E4484CBD16B6A40F0A /* Pods_ZAlertView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +94,8 @@
 				607FACD21AFB9204008FA782 /* Example for ZAlertView */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				A41F97BF97A6CFDB3770D79C /* Pods */,
-				C46DFFE0EFF37B5C80FC674D /* Frameworks */,
+				80980AD3D209E312E7517291 /* Pods */,
+				D2EFE7317147CF7FB4F5A93D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,19 +157,23 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A41F97BF97A6CFDB3770D79C /* Pods */ = {
+		80980AD3D209E312E7517291 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08378FFA9C75150FFADD064A /* Pods-ZAlertView_Example.debug.xcconfig */,
-				443EAF03BC97C111009DE77F /* Pods-ZAlertView_Example.release.xcconfig */,
+				03485B7084B6BA4FA3F30773 /* Pods-ZAlertView_Example.debug.xcconfig */,
+				753653027C4D7D64FA2E8A01 /* Pods-ZAlertView_Example.release.xcconfig */,
+				D9A0210C99C651E442C30C07 /* Pods-ZAlertView_Tests.debug.xcconfig */,
+				D4F48E4804F615242398672B /* Pods-ZAlertView_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C46DFFE0EFF37B5C80FC674D /* Frameworks */ = {
+		D2EFE7317147CF7FB4F5A93D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				132326945D6017566C5CA479 /* Pods_ZAlertView_Example.framework */,
+				9174CD1C1D1ADB2700BA28C4 /* ZAlertView.framework */,
+				3001E9051963C8F28FDAA82D /* Pods_ZAlertView_Example.framework */,
+				4022FDD7BEDC62280A613165 /* Pods_ZAlertView_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,12 +185,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ZAlertView_Example" */;
 			buildPhases = (
-				1E128D7AAB30620C5E6340E8 /* [CP] Check Pods Manifest.lock */,
+				3AAE74FE52DD488E5E54B2F3 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				BF8F4C0EF8A7414ACD13A0F1 /* [CP] Embed Pods Frameworks */,
-				E8E6EC63AA7109FCB84D256F /* [CP] Copy Pods Resources */,
+				AB5210AC616098D6BE8DE7AD /* [CP] Embed Pods Frameworks */,
+				1A7C31D2E41AE65D3666BF1C /* [CP] Copy Pods Resources */,
+				9174CD201D1ADB6100BA28C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ZAlertView_Tests" */;
 			buildPhases = (
+				373F67755BF5908CE5AF931D /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				48F574432CC3073CD7D3237B /* [CP] Embed Pods Frameworks */,
+				2CD57A6A09C8A80E087B7F14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,37 +284,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E128D7AAB30620C5E6340E8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BF8F4C0EF8A7414ACD13A0F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8E6EC63AA7109FCB84D256F /* [CP] Copy Pods Resources */ = {
+		1A7C31D2E41AE65D3666BF1C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,6 +297,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD57A6A09C8A80E087B7F14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAlertView_Tests/Pods-ZAlertView_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		373F67755BF5908CE5AF931D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3AAE74FE52DD488E5E54B2F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48F574432CC3073CD7D3237B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAlertView_Tests/Pods-ZAlertView_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5210AC616098D6BE8DE7AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAlertView_Example/Pods-ZAlertView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,7 +513,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08378FFA9C75150FFADD064A /* Pods-ZAlertView_Example.debug.xcconfig */;
+			baseConfigurationReference = 03485B7084B6BA4FA3F30773 /* Pods-ZAlertView_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -446,13 +522,13 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 443EAF03BC97C111009DE77F /* Pods-ZAlertView_Example.release.xcconfig */;
+			baseConfigurationReference = 753653027C4D7D64FA2E8A01 /* Pods-ZAlertView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -461,13 +537,15 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9A0210C99C651E442C30C07 /* Pods-ZAlertView_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -481,14 +559,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZAlertView_Example.app/ZAlertView_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F48E4804F615242398672B /* Pods-ZAlertView_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -498,7 +578,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZAlertView_Example.app/ZAlertView_Example";
 			};
 			name = Release;

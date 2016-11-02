@@ -4,3 +4,12 @@ use_frameworks!
 target 'ZAlertView_Example' do
   pod "ZAlertView", :path => "../"
 end
+
+target 'ZAlertView_Tests' do
+  pod "ZAlertView", :path => "../"
+
+  pod 'Quick'
+  pod 'Nimble'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
