@@ -35,7 +35,4 @@ A customizable AlertView written in Swift as a present for my 26th birthday. Of 
     'ZAlertView' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
